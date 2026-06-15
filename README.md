@@ -11,15 +11,15 @@ The project models the interaction processes within an acting school involving s
 
 ## Repository Structure
 
-BPMN/
+**BPMN/**
 Contains BPMN models of the process:
 - Full process model
 - School, Student, and Teacher views
 
-WF NETS/
+**WF NETS/**
 Contains Petri net models (.pnml) derived from BPMN diagrams.
 
-Images and others/
+**Images and others/**
 Contains:
 - BPMN diagrams
 - Petri net visualizations
@@ -46,7 +46,7 @@ The analysis is performed on three Workflow Nets: the Student process, the Schoo
 
 **Full collaboration net (manual construction):**
 - Integration of Student and School Workflow Nets
-- Analysis of **free-choice violations** (5 violations identified)
-- **PT/TP-handle analysis** (net is not well-structured)
-- S-component analysis (210 components, all places covered)
+- Analysis of **free-choice violations** 
+- **PT/TP-handle analysis** 
+- S-component analysis
 - Boundedness, liveness, and **soundness** verification
