@@ -2,8 +2,8 @@
 
 This repository contains the deliverables for the Business Process Modeling (BPM) course, part of the MSc in Data Science and Business Informatics at the University of Pisa (UniPi).
 
-Author: Lorenzo Lattanzi
-Academic Year: 2025/2026
+**Author:** Lorenzo Lattanzi<br>
+**Academic Year:** 2025/2026
 
 ## Project Overview
 
@@ -34,10 +34,19 @@ Contains:
 
 ## Analysis
 
-The project includes:
-- BPMN to Workflow Net transformation
-- Structural analysis of Petri nets
-- Soundness verification
-- Analysis of free-choice, safeness, and boundedness
-- Reachability graph estimation
-- Discussion of relaxed and weak soundness when applicable
+The analysis is performed on three Workflow Nets: the Student process, the School process, and the full collaboration net.
+
+**Individual processes (Student & School):**
+- BPMN to Workflow Net transformation (via BPMN-to-Petri Net tool)
+- Classification as **S-nets** (each transition has exactly one input and one output place)
+- **Free-choice property** verification
+- **S-component analysis** (single component covering the entire net)
+- Boundedness, liveness, safeness, and **soundness** verification (via WoPeD)
+- Coverability graph construction (coincides with reachability graph due to boundedness)
+
+**Full collaboration net (manual construction):**
+- Integration of Student and School Workflow Nets
+- Analysis of **free-choice violations** (5 violations identified)
+- **PT/TP-handle analysis** (net is not well-structured)
+- S-component analysis (210 components, all places covered)
+- Boundedness, liveness, and **soundness** verification
